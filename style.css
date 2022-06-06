@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-name {
+    display: flex;
+}
+
+#nav-list {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 14em;
+    list-style-type: none;
+}
+
+#nav-list li>a {
+    text-decoration: none;
+    color: black;
+}
