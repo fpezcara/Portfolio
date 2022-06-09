@@ -1,21 +1,74 @@
-nav {
-    display: flex;
-    justify-content: space-between;
+:root {
+    --green: rgb(218, 247, 166);
+    --yellow: rgb(255, 195, 0);
+    --orange: rgb(255, 87, 51);
+    --pink: rgb(199, 0, 57);
+    --purple: rgb(88, 24, 69);
 }
 
-#nav-name {
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+
+/*? Navbar */
+
+#nav-element,
+#single-nav {
     display: flex;
+    background: #F28379;
+    ;
+    margin: 0;
+    padding: 0.9em;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px 0px;
+
+}
+
+#nav-element {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#single-nav {
+    justify-content: end;
+    align-items: center;
+}
+
+#nav-title {
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-title h1 {
+    justify-content: start;
+    align-self: center;
+    justify-self: end;
+    align-items: center;
 }
 
 #nav-list {
     display: flex;
-    align-items: space-between;
+    align-items: center;
     justify-content: space-between;
-    width: 14em;
+    width: 24em;
     list-style-type: none;
+    font-size: 1.2em;
 }
 
 #nav-list li>a {
     text-decoration: none;
     color: black;
+}
+
+main {
+    margin: 1.1em;
+}
+
+#page-title {
+    max-width: 12%;
+    font-size: 1.2em;
+    color: var(--purple)
 }
